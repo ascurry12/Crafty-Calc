@@ -1,1 +1,1 @@
-# Cute-Calculator
+# Crafty-Calc
