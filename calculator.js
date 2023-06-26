@@ -1,4 +1,3 @@
-let display = '';
 var currNum = '';
 var prevNum = '';
 var numericCurr, result = 0;
