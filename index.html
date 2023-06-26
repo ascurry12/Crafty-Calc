@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cute Calculator</title>
+        <link id="page_style" rel="stylesheet" href="default.css"> 
+        <link rel="icon" type="image/x-icon" href=""> <!-- add link -->
+        <script src="calculator.js"></script>
+    </head>
+
+    <body>
+        <div class="calculator">
+            <div class="calc_display">
+                <input type="text" id="display" readonly> <!--no value for now-->
+            </div>
+            <div>
+                <div>    
+                    <input type="button" value="+/-" onclick="negate()">             
+                    <input type="button" value="%" onclick="percentage()">  
+                    <input type="button" value="√" onclick="squareRoot()">  
+                    <input type="button" value="AC" onclick="allClear()"> 
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="appendNumber('7')">             
+                    <input type="button" value="8" onclick="appendNumber('8')">  
+                    <input type="button" value="9" onclick="appendNumber('9')">  
+                    <input type="button" value="÷" onclick="currOperator('/')"> 
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="appendNumber('4')">             
+                    <input type="button" value="5" onclick="appendNumber('5')">  
+                    <input type="button" value="6" onclick="appendNumber('6')">  
+                    <input type="button" value="x" onclick="currOperator('x')"> 
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="appendNumber('1')">             
+                    <input type="button" value="2" onclick="appendNumber('2')">  
+                    <input type="button" value="3" onclick="appendNumber('3')">  
+                    <input type="button" value="-" onclick="currOperator('-')"> 
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="appendNumber('0')">             
+                    <input type="button" value="." onclick="appendNumber('.')">  
+                    <input type="button" value="=" onclick="compute()">  
+                    <input type="button" value="+" onclick="currOperator('+')"> 
+                </div>
+            </div>
+        </div>
+        <div class="css_toggle">
+            <input type="button" value="default" onclick="switchCSS('default')">             
+            <input type="button" value="sea" onclick="switchCSS('sea')">  
+            <input type="button" value="universe" onclick="switchCSS('universe')">  
+            <input type="button" value="ghibli" onclick="switchCSS('ghibli')"> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+/* @import 'typekit here' */
+
+.calculator {
+    display: block;
+    background-color: turquoise;
+    text-align: center;
+    width: 125px;
+    padding: 15px;
+}
+
+.calc_display {
+    margin-bottom: 10px;
+}
+
+#display {
+    width: 120px;
+
+}
+
+.calculator input[type=button] {
+    display: inline;
+    background-color: white;
+    text-align: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+}
+
+.css_toggle input[type=button] {
+    display: block;
+    background-color: lightcyan;
+    margin-bottom: 2px;
+    text-align: auto;
+    width: 62px
+}
+
+.css_toggle {
+    display: block;
+    background-color: lightskyblue;
+    text-align: center;
+    width: 62px;
+    padding: 15px;
+    margin-left: 155px;
+    margin-top: -201px;
+}
+
+
