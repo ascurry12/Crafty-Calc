@@ -1,47 +1,81 @@
 /* @import 'typekit here' */
+@font-face {
+    font-family: 'Digital Dream';
+    src: url('DIGITALDREAM.ttf');
+}
+@font-face {
+    font-family: 'Filson';
+    src: url('FilsonPro-Regular.ttf')
+}
 
+.title {
+    position: relative;
+    font-family: 'Filson';
+    font-size: 35px;
+    text-align: center;
+}
 .calculator {
     display: block;
-    background-color: turquoise;
+    position: relative;
+    background-color: lightseagreen;
+    border-radius: 6px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.174);
     text-align: center;
-    width: 125px;
-    padding: 15px;
+    width: 300px;
+    height: 450px;
+    padding: 40px;
+    margin: auto;
 }
 
 .calc_display {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 #display {
-    width: 120px;
-
+    width: 280px;
+    height: 60px;
+    text-align: right;
+    font-family: 'Digital Dream';
+    font-size: 35px;
 }
 
 .calculator input[type=button] {
     display: inline;
     background-color: white;
     text-align: center;
-    width: 28px;
-    height: 28px;
+    font-family: 'Filson';
+    font-size: 30px;
     border-radius: 100%;
+    margin: 4.5px;
+    width: 62.5px;
+    height: 62.5px;
+    cursor: pointer;
 }
 
 .css_toggle input[type=button] {
     display: block;
     background-color: lightcyan;
-    margin-bottom: 2px;
-    text-align: auto;
-    width: 62px
+    text-align: center;
+    font-family: 'Filson';
+    font-size: 18px;
+    border-radius: 6px;
+    margin-bottom: 1.5px;
+    width: 90px;
+    height: 38px;
+    cursor: pointer;
 }
 
 .css_toggle {
     display: block;
+    position: absolute;
     background-color: lightskyblue;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.174);
     text-align: center;
-    width: 62px;
+    width: 100px;
+    height: 175px;
     padding: 15px;
-    margin-left: 155px;
-    margin-top: -201px;
+    margin-top: -480px;
+    margin-left: 340px;
 }
-
-
