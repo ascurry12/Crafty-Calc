@@ -7,7 +7,7 @@ function allClear() {
     document.getElementById('display').value = '';
     currNum = '';
     prevNum = '';
-    result = 0; // hello
+    result = 0; 
     numericCurr = 0;
 }
 
@@ -15,6 +15,10 @@ function clear() {
     document.getElementById('display').value = '';
     currNum = '';
     numericCurr = 0;
+}
+
+function updateDisplay() {
+    document.getElementById('display').value = currNum;
 }
 
 function appendNumber(number) {
@@ -45,14 +49,6 @@ function negate() {
     updateDisplay();
 }
 
-function compute() {
-    prevNum = prevNum + currNum;
-    result = eval(prevNum);
-    prevNum = '';
-    currNum = result.toString();
-    updateDisplay();
-}
-
 function percentage() {
     currNum += "/100";
     result = eval(currNum);
@@ -67,8 +63,12 @@ function squareRoot() {
     updateDisplay();
 }
 
-function updateDisplay() {
-    document.getElementById('display').value = currNum;
+function compute() {
+    prevNum = prevNum + currNum;
+    result = eval(prevNum);
+    prevNum = '';
+    currNum = result.toString();
+    updateDisplay();
 }
 
 function switchCSS(style) {
