@@ -1,7 +1,7 @@
 let display = '';
 var currNum = '';
 var prevNum = '';
-var numericCurr, numericPrev, result = 0;
+var numericCurr, result = 0;
 
 
 function allClear() {
@@ -10,7 +10,6 @@ function allClear() {
     prevNum = '';
     result = 0; // hello
     numericCurr = 0;
-    numericPrev = 0;
 }
 
 function clear() {
@@ -26,16 +25,16 @@ function appendNumber(number) {
 
 function currOperator(operation) {
     if (operation == '+') {
-        prevNum = currNum + "+";
+        prevNum += currNum + "+";
     }
     else if (operation == '-') {
-        prevNum = currNum + "-";
+        prevNum += currNum + "-";
     }
     else if (operation == '/') {
-        prevNum = currNum + "/";
+        prevNum += currNum + "/";
     }
     else if (operation == 'x') {
-        prevNum = currNum + "*";
+        prevNum += currNum + "*";
     }
     
     clear();
@@ -56,17 +55,15 @@ function compute() {
 }
 
 function percentage() {
-    prevNum = '';
-    prevNum = prevNum + currNum + "/100";
-    result = eval(prevNum);
+    currNum += "/100";
+    result = eval(currNum);
     currNum = result.toString();
     updateDisplay();
 }
-// FIXME - sqrt not working
+
 function squareRoot() {
-    // prevNum = '';
     numericCurr = parseFloat(currNum);
-    result = sqrt(numericCurr);
+    result = Math.sqrt(numericCurr);
     currNum = result.toString();
     updateDisplay();
 }
