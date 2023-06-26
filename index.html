@@ -9,6 +9,8 @@
     </head>
 
     <body>
+        <div class="title">Crafty Calculator</div>
+        <img src="">
         <div class="calculator">
             <div class="calc_display">
                 <input type="text" id="display" readonly> <!--no value for now-->
@@ -45,12 +47,13 @@
                     <input type="button" value="+" onclick="currOperator('+')"> 
                 </div>
             </div>
+            <div class="css_toggle">
+                <input type="button" value="default" onclick="switchCSS('default')">             
+                <input type="button" value="sea" onclick="switchCSS('sea')">  
+                <input type="button" value="universe" onclick="switchCSS('universe')">  
+                <input type="button" value="ghibli" onclick="switchCSS('ghibli')"> 
+            </div>
         </div>
-        <div class="css_toggle">
-            <input type="button" value="default" onclick="switchCSS('default')">             
-            <input type="button" value="sea" onclick="switchCSS('sea')">  
-            <input type="button" value="universe" onclick="switchCSS('universe')">  
-            <input type="button" value="ghibli" onclick="switchCSS('ghibli')"> 
-        </div>
+        
     </body>
 </html>
